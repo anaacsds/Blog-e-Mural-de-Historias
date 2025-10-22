@@ -1,34 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/*adiciona fundo de colmeia*/
 body {
     background-image: url(img/colmeia.png);
 }
 
-h1 {
-    text-align:center;
+/*alinha a seta e o texto*/
+header {
+    display: flex;
+    align-items: center; 
     padding: 20px;
+    gap: 15px;           
 }
-
-header p {
-    padding: 10px;
-    font-size: 20px;
-}
-
+/*tamanho da seta*/
 header img {
-    text-align: start;
+    width: 30px;       
+    height: 30px;
+    cursor: pointer;     /*mãozinha*/
+}
+/*texto "compartilhe sua história"*/
+header p {
+    font-size: 1.5rem;
+    font-weight: Arial;
+    text-align:justify;
+    color: rgb(0, 0, 0);      
+}
+
+/*ícone de usuário*/
+.criar-post img {
+    width: 40px; 
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.post-it img {
     width: 30px;
     height: 30px;
 }
 
-main img {
-    width: 280px;
-    height: 280px;
+/*post-its*/
+main {
+    display: flex;       
+    gap: 30px;
 }
 
-.postits {
-    text-align:calc();
+.mural {
+    flex-basis: 60%; 
+    display: flex;           
+    gap: 25px;
+}
+
+.post-it {
+    flex-basis: 30%; 
+    background-color: #f8ca3f; 
+    padding: 20px;
+   }
+
+   .criar-post textarea {
+    width: 100%; 
+    background: #f7c532; 
+    font-family: Arial;
+    resize: none; /*não redimensionar caixa*/
+}
+
+.criar-post textarea {
+    height: 100px; 
 }
