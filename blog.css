@@ -19,7 +19,7 @@
 /*texto "compartilhe sua história"*/
 .header-blog p {
     font-size: 1.5rem;
-    font-weight: Arial;
+    font-family: 'Segoe UI';
     text-align:justify;
     color: rgb(0, 0, 0);      
 }
@@ -57,7 +57,7 @@
    .criar-post textarea {
     width: 100%; 
     background: #f7c532; 
-    font-family: Arial;
+    font-family: 'Segoe UI';
     resize: none; /*não redimensionar caixa*/
 }
 
