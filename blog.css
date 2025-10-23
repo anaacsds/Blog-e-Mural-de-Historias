@@ -1,23 +1,23 @@
 /*adiciona fundo de colmeia*/
-body {
+.body-blog {
     background-image: url(img/colmeia.png);
 }
 
 /*alinha a seta e o texto*/
-header {
+.header-blog {
     display: flex;
     align-items: center; 
     padding: 20px;
     gap: 15px;           
 }
 /*tamanho da seta*/
-header img {
+.header-blog img {
     width: 30px;       
     height: 30px;
     cursor: pointer;     /*mãozinha*/
 }
 /*texto "compartilhe sua história"*/
-header p {
+.header-blog p {
     font-size: 1.5rem;
     font-weight: Arial;
     text-align:justify;
@@ -37,7 +37,7 @@ header p {
 }
 
 /*post-its*/
-main {
+.main-blog {
     display: flex;       
     gap: 30px;
 }
