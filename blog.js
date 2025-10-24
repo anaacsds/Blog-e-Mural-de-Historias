@@ -11,24 +11,6 @@ const sistBlog = [
             "idPost": "p1", "Nome": "Digite aqui...", 
             "NovaHistória": "Digite aqui...", }, 
         ]
-    const sistemaFeedback = [ 
-            { "id": "Amei" , 
-                "icone": "❤"
-                }, 
-                { "id": "Legal", 
-                    "icone": " " 
-
-                }, 
-                { "id": "Gostei", 
-                    "icone": " " 
-
-                }, 
-            ]
-        const sistemaComentarios = [
-                    { "nomeUsuario": "Digite aqui...", 
-                        "texto": "Digite aqui..."
-                        },
-                    ]
 
 document.addEventListener('DOMContentLoaded', () => { //carrega o documento e depois roda o js
  
