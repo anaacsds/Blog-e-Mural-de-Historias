@@ -6,41 +6,37 @@
     <title>Blog e Mural de Histórias</title>
     <link rel="stylesheet" href="blog.css">
 </head>
+
 <body class="body-blog">
-    <header class="header-blog">
-        <img src="img/seta.png" alt="Voltar"> 
-        <p>Compartilhe sua história aqui!</p>
-    </header>
+    <div class="container-principal-blog"> 
+        <div class="coluna-form-blog"> <!--Form do seu post-->
+            <span class="seta-para-voltar-blog">←</span> <!--Seta para voltar para pagina anterior-->
+            <h2>Compartilhe sua história aqui!</h2>
+            <form id="form-historia-blog">
+                <label for="input-nome">Digite seu nome...</label>
+                <input type="text" id="input-nome">
+                <label for="input-historia">Digite sua história...</label>
+                <textarea id="input-historia"></textarea>
+                <button type="submit" id="btn-enviar">Enviar</button>
+            </form>
+        </div>
 
-    <main class="main-blog">
-        <section class="criar-post">
-            <img src="img/icone-pessoa.png" alt="Ícone de usuário">
-            <textarea placeholder="Digite seu nome... "></textarea>
-            <textarea placeholder="Digite sua história... "></textarea>
-        </section>
-
-        <section class="mural">
-            
-            <article class="post-it">
-                <img src="img/icone-pessoa.png" alt="Ícone de usuário">
-                <div class="reacoes">
-                    <img src="img/coracao.png" alt="Reação: Amei">
-                    <img src="img/sorriso.png" alt="Reação: Gostei">
-                    <img src="img/like.png" alt="Reação: Curtir">
+        <div class="coluna-posts-blog" id="posts-container"> <!--Outros posts e o seu ao postar-->
+            <div class="post-it-blog">
+                <div class="post-header-blog">
+                    <span class="icone-pessoa-blog">👤</span>
+                    <span class="nome-usuario"></span> </div>
+                <div class="post-reacoes-blog">
+                    <span>❤</span>
+                    <span>😊</span>
+                    <span>🤔</span>
                 </div>
-            </article>
+                <div class="post-corpo">
+                    </div>
+            </div>
 
-            <article class="post-it">
-                <img src="img/icone-pessoa.png" alt="Ícone de usuário">
-                <div class="reacoes">
-                    <img src="img/coracao.png" alt="Reação: Amei">
-                    <img src="img/sorriso.png" alt="Reação: Gostei">
-                    <img src="img/like.png" alt="Reação: Curtir">
-                </div>
-            </article>
-            
-            </section>
-    </main>
+            </div>
+    </div>
 
     <script src="blog.js"></script> 
 </body>

@@ -1,66 +1,66 @@
-/*adiciona fundo de colmeia*/
 .body-blog {
-    background-image: url(img/colmeia.png);
+    font-family: Segoe 'Segoe UI';
+    background-image: url('img/colmeia.png'); 
 }
 
-/*alinha a seta e o texto*/
-.header-blog {
+.container-principal-blog {
+    display: flex; /*um do lado do outro*/
+    gap: 20px; /*espaço entre um e outro */
+    padding: 20px; /*espaço entre a borda da tela*/
+}
+
+.coluna-form-blog {
+    flex: 1;
+}
+
+.coluna-posts-blog {
+    flex: 2;
+    flex-wrap: wrap; /* para os posts quebrarem a linha */
+    display: flex; /*para ficar um post do lado do outro */
+    gap: 15px; /*distancia entre um e outro */
+}
+
+#form-historia-blog {
     display: flex;
-    align-items: center; 
-    padding: 20px;
-    gap: 15px;           
-}
-/*tamanho da seta*/
-.header-blog img {
-    width: 30px;       
-    height: 30px;
-    cursor: pointer;     /*mãozinha*/
-}
-/*texto "compartilhe sua história"*/
-.header-blog p {
-    font-size: 1.5rem;
-    font-family: 'Segoe UI';
-    text-align:justify;
-    color: rgb(0, 0, 0);      
+    flex-direction: column; /* um item debaixo de outro */
 }
 
-/*ícone de usuário*/
-.criar-post img {
-    width: 40px; 
-    height: 40px;
-    margin-bottom: 10px;
+#form-historia-blog input, #form-historia-blog textarea {
+    padding: 10px;
+    background-color: #fceb9f; /* cor amarela dos inputs */
 }
 
-.post-it img {
-    width: 30px;
-    height: 30px;
+#form-historia-blog button {
+    padding: 10px;
+    background-color: #e6b400; /* Verde */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/*post-its*/
-.main-blog {
-    display: flex;       
-    gap: 30px;
+.seta-para-voltar-blog {
+    cursor: pointer;
 }
 
-.mural {
-    flex-basis: 60%; 
-    display: flex;           
-    gap: 25px;
+.post-it-blog {
+    width: 300px; /* largura fixa para cada post */
+    min-height: 250px; /* altura de cada post */
+    background-color: #fcf8a0; /* Amarelo do post-it */
+    padding: 15px;
 }
 
-.post-it {
-    flex-basis: 30%; 
-    background-color: #f8ca3f; 
-    padding: 20px;
-   }
-
-   .criar-post textarea {
-    width: 100%; 
-    background: #f7c532; 
-    font-family: 'Segoe UI';
-    resize: none; /*não redimensionar caixa*/
+.post-header-blog {
+    border-bottom: 1px dashed #ccc; /*linha entre icon, emojis e texto */
 }
 
-.criar-post textarea {
-    height: 100px; 
+.icone-pessoa-blog {
+    font-size: 24px;
+}
+
+.post-reacoes-blog {
+    font-size: 20px;
+}
+
+.post-reacoes-blog span {
+    cursor: pointer;
 }
