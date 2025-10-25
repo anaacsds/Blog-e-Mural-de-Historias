@@ -63,4 +63,9 @@
 
 .post-reacoes-blog span {
     cursor: pointer;
+    display: inline-block;
+}
+
+.post-reacoes-blog span:hover {
+    transform: scale(1.4); 
 }
