@@ -32,7 +32,7 @@
 
 #form-historia-blog button {
     padding: 10px;
-    background-color: #e6b400; /* Verde */
+    background-color: #e6b400; 
     color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 16px;
@@ -68,4 +68,15 @@
 
 .post-reacoes-blog span:hover {
     transform: scale(1.4); 
+}
+
+.coment-blog button {
+    background-color: #e6b400; 
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.coment-blog input {
+    background-color: #fceb9f; 
+    width: 100px;
 }
