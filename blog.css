@@ -80,3 +80,10 @@
     background-color: #fceb9f; 
     width: 100px;
 }
+
+/*responsividade*/
+@media (max-width: 768px) { 
+    .container-principal-blog {
+        flex-direction: column; 
+    }
+}
