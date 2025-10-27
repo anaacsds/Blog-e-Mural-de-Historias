@@ -32,7 +32,7 @@
 
 #form-historia-blog button {
     padding: 10px;
-    background-color: #e6b400; 
+    background-color: #FDB813; 
     color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 16px;
@@ -71,7 +71,7 @@
 }
 
 .coment-blog button {
-    background-color: #e6b400; 
+    background-color: #FDB813; 
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
@@ -85,5 +85,308 @@
 @media (max-width: 768px) { 
     .container-principal-blog {
         flex-direction: column; 
+    }
+}
+
+
+
+/* Footer e Header */
+
+/* --- Variáveis de Cor --- */
+:root {
+    --bee-yellow: #FDB813; /* Amarelo abelha */
+    --light-yellow: #FFFBEB;
+    --dark-grey: #333;
+    --mid-grey: #666;
+    --light-grey: #f0f0f0;
+    --bg-color: #f9f9f9;
+    --footer-black: #1a1a1a; /* Preto do footer */
+}
+
+/* --- 1. Header (Barra Principal) --- */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Barra Principal (Navegação) */
+.main-nav {
+
+    background-color: var(--bee-yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-left .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark-grey); /* Cor ajustada para fundo amarelo */
+}
+
+/* Estilo do Logo Adicionado */
+.logo {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: 700;
+    font-size: 1.75rem;
+    font-family: 'Georgia', serif;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    background-color: #fff; /* Fundo branco para destaque */
+    flex: 1;
+    max-width: 500px;
+    margin: 0 1.5rem; /* Espaçamento */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+    background: transparent;
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+    color: var(--dark-grey); /* Cor ajustada */
+}
+
+.user-profile i {
+    font-size: 1.75rem; /* Um pouco maior */
+    color: var(--dark-grey);
+}
+
+/* --- Estilos do Menu Sidebar (Adicionado) --- */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Começa fora da tela */
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-sidebar.active {
+    left: 0; /* Mostra o menu */
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.15rem 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-header .logo {
+    font-size: 1.5rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--mid-grey);
+}
+
+.mobile-sidebar a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-sidebar a:hover {
+    background-color: #f9f9f9;
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* --- 4. Footer Preto --- */
+.site-footer {
+    background-color: var(--footer-black);
+    color: #eee;
+    padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #444;
+}
+
+/* Espaço do Mascote no Footer */
+.footer-mascot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* NOVO: Estilo para a imagem real do mascote no footer */
+.mascot-footer-img {
+    width: 150px; /* Tamanho do mascote no footer */
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%; /* Se sua imagem for quadrada, arredonda ela */
+}
+
+.footer-mascot span {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 500;
+}
+.footer-links a:hover {
+    color: var(--bee-yellow);
+}
+.footer-social a {
+    color: inherit; 
+    font-size: 1.5rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    color: var(--bee-yellow);
+}
+
+.footer-social i {
+    pointer-events: none; /
+}
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+.footer-social i {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.footer-social i:hover {
+    color: var(--bee-yellow);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* --- Responsividade --- */
+
+@media (max-width: 992px) {
+    .search-bar {
+        display: none;
+    }
+    .main-nav {
+        justify-content: space-between;
+    }
+    .nav-left {
+        flex: 1;
+    }
+    .nav-right {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .mascot-home-section {
+        top: 20px;
+        right: 20px;
+        .mascot-home-img {
+            width: 100px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .slide-text { max-width: 100%; }
+    .slide-image img { max-height: 250px; }
+    .carousel-nav {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1rem;
+    }
+    .carousel-btn { top: 35%; }
+
+    .main-nav { gap: 1rem; }
+    .search-bar, .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-left .menu-icon { order: 2; }
+    .nav-left .logo { order: 1; }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .mascot-home-section {
+        display: none;
     }
 }
