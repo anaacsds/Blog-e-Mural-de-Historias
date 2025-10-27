@@ -85,6 +85,27 @@
 @media (max-width: 768px) { 
     .container-principal-blog {
         flex-direction: column; 
+
+    .search-bar {
+        display: none;
+    }
+    .main-nav {
+        justify-content: space-between;
+    }
+    .nav-left {
+        flex: 1;
+    }
+    .nav-right {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .mascot-home-section {
+        top: 20px;
+        right: 20px;
+        .mascot-home-img {
+            width: 100px;
+        }
+    }
     }
 }
 
