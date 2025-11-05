@@ -1,5 +1,5 @@
 .body-blog {
-    font-family: Segoe 'Segoe UI';
+    font-family: 'Segoe UI';
     background-image: url('img/colmeia.png'); 
 }
 
@@ -108,6 +108,54 @@
     }
     }
 }
+
+/*abas Blog*/
+.aba-blog {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #fceb9f; 
+    border: 2px solid #FDB813; /* Borda no amarelo principal */
+    color: #333;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.aba-blog:hover {
+    background-color: #FDB813; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

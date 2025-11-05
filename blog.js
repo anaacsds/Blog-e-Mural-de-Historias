@@ -11,7 +11,7 @@ const sistBlog = [
             "idPost": "p1", "Nome": "Digite aqui...", 
             "NovaHistória": "Digite aqui...", }, 
         ]
-
+ 
 document.addEventListener('DOMContentLoaded', () => { //carrega o documento e depois roda o js
  
     const formBlog = document.getElementById('form-historia-blog');
@@ -69,6 +69,12 @@ document.addEventListener('DOMContentLoaded', () => { //carrega o documento e de
     postsContainerBlog.addEventListener('click', mostrarAlertaDeReacao); //vai escutar todos os cliques
 });
 });
+
+
+
+
+
+
 
 
 
