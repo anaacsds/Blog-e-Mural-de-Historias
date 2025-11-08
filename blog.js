@@ -70,7 +70,13 @@ document.addEventListener('DOMContentLoaded', () => { //carrega o documento e de
 });
 });
 
-
+//linkando página de histórias favs e histórias em alta
+function irPraBlogFavs() {
+  window.location.href = "blog-favs.html";
+}
+function irPraBlogAlta() {
+  window.location.href = "blog-alta.html";
+}
 
 
 
